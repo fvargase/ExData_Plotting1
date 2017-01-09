@@ -38,7 +38,7 @@ lines(Datos$Sub_metering_2, col = "red")
 
 lines(Datos$Sub_metering_3, col = "blue")
 
-title(ylab = "Energy submetering")
+title(ylab = "Energy sub metering")
 
 axis(1, at = c(1, 1441, 2880), lab = c("Thu", "Fri", "Sat"))
 
