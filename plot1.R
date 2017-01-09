@@ -12,5 +12,16 @@ ColumnNames <- read.table("Semana1/household_power_consumption.txt",
 
 colnames(Datos) <- unlist(ColumnNames)
 
-Datos$Date <- as.Date(Datos$Date, format = "%d/%m/%Y")
+hist(Datos$Global_active_power,
+     main = "Global Active Power",
+     xlab = "Global Active Power (kilowatts)",
+     col = "red")
 
+png(filename = "plot1.png")
+
+hist(Datos$Global_active_power,
+     main = "Global Active Power",
+     xlab = "Global Active Power (kilowatts)",
+     col = "red")
+
+dev.off()
